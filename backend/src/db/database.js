@@ -7,10 +7,10 @@ const connection = mysql.createConnection({
   user: config.user,
   password: config.password,
   database: config.database,
-});  
+});
 
 const getConnection = () => {
-  return connection;
+  return connection
 }
 
 export default getConnection;

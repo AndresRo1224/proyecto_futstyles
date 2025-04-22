@@ -9,8 +9,12 @@ const app = express();
 /*setear puerto a mi server web*/
 
 app.set("port",5000);
+/* Middleware*/ 
+app.use(express.json());
 
 app.use(cors());
+/*funcionalidad para leer los datos de un json
+
 /*rutas*/
 
 app.use("/api/categorias",categoriasRoutes)
